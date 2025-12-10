@@ -1,0 +1,6 @@
+.env
+DATABASE_URL
+.env.local
+__pycache__/ 
+*.pyc 
+venv/
