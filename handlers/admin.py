@@ -122,7 +122,7 @@ async def get_event_capacity(update: Update, context: ContextTypes.DEFAULT_TYPE)
 توضیحات: {context.user_data['event_desc']}
 تاریخ: {context.user_data['event_date']}
 محل: {context.user_data['event_location']}
-هزینه: {'رایگان' if context.user_data['event_cost'] == 0 else f'{context.user_data['event_cost']:,} تومان'}
+هزینه: {('رایگان' if context.user_data['event_cost'] == 0 else f'{context.user_data['event_cost']:,} تومان')}
 ظرفیت: {'نامحدود' if cap == 0 else cap}
 
 آیا اطلاعات درست است؟
